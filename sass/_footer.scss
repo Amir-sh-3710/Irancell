@@ -1,0 +1,99 @@
+$base-yellow: #fc0;
+@font-face {
+  font-family: Irancell;
+  src: url(../css/font/Irancell\ Regular.ttf);
+}
+@font-face {
+  src: url(../css/font/MTNIrancell-Fontjo.com/MTNIrancell-Bold.ttf);
+  font-family: MTNIrancell-Bold;
+}
+
+
+footer{
+  text-align:center;
+  overflow: hidden;
+  ul{
+li{
+    a{
+      padding: 1rem;
+    }
+  }
+  }
+  
+}
+
+
+@media(min-width:768px){
+footer {
+  width: 100%;
+  height: 100vw;
+  background: #202020;
+  border-radius: 24px;
+  position: relative;
+  .row {
+    .col-12.col-md-2 {
+      ul {
+        li {
+          padding: 0 0 0.8rem;
+          a {
+            color: #fff;
+            font-family: Irancell;
+            font-size: 13px;
+            padding: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+  .d-flex {
+    .content {
+      color: #fff;
+      .fas.fa-phone-alt {
+        color: transparent !important;
+      }
+      span {
+        color: $base-yellow;
+      }
+    }
+  }
+  .email {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    input[type="email"] {
+      width: 352px;
+      height: 48px;
+      border-radius: 12px;
+    }
+    ::placeholder {
+      padding-left: 10px;
+      font-family: Irancell;
+      font-weight: 500;
+      color: gray;
+      opacity: 0.5;
+    }
+    .button {
+      font-family: MTNIrancell-Bold;
+      background-color: $base-yellow;
+      display: block;
+      width: 180px;
+      height: 50px;
+      text-align: center;
+      line-height: 32px;
+      border-radius: 25px;
+      padding: 10px 15px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+  .last{
+   
+   img{
+    background-color: #fff;
+    width: 104px;
+    height: 104px;
+   }
+  }
+}
+}

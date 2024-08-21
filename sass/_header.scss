@@ -1,0 +1,235 @@
+$base-yellow: #fc0;
+
+@font-face {
+  font-family: Irancell;
+  src: url(../css/font/Irancell\ Regular.ttf);
+}
+header{
+  display: flex !important;
+  background-color: $base-yellow;
+  align-items: center;
+  img{
+    width: 88px;
+        height: auto;
+  }
+  
+}
+.navbar{
+.offcanvas-body{
+.right-side {
+      img.logo {
+        width: 88px;
+        height: auto;
+      }
+      ul.navbar-nav {
+        padding-top: 1rem;
+        li{
+          a{
+            color: black !important;
+          }
+        }
+
+        .parent {
+          & > a {
+            padding: 3rem 0.4rem;
+          }
+
+          .child {
+            img {
+              position: absolute;
+              top: 40px;
+              left: 45px;
+              z-index: 3;
+              border-radius: 15px;
+            }
+
+            .has-child {
+              & > a::after {
+                content: "";
+                position: absolute;
+                right: 35%;
+                width: 16px;
+                height: 16px;
+                background-image: url(../images/arrow-to-left.svg);
+                background-repeat: no-repeat;
+              }
+            }
+
+            position: absolute;
+            width: 100%;
+            height: 32rem;
+            top: 100%;
+            right: 0;
+            padding: 40px 56px;
+            z-index: 10;
+            display: none;
+            background: #fff;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.04);
+            transition: all 0.5s;
+          }
+        }
+
+        .parent:hover {
+          .child {
+            display: block;
+
+            .children {
+              position: absolute;
+              top: 30px;
+              left: 40%;
+              display: none;
+              margin: 0;
+              padding: 0;
+
+              li {
+                padding: 0.6rem;
+              }
+            }
+          }
+
+          .has-child:hover {
+            .children {
+              display: block;
+            }
+          }
+        }
+
+        .parent:nth-child(1) {
+          & > a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 3px;
+            background: #202020;
+            margin: 0 auto;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+}
+}
+
+
+
+
+@media(min-width:768px){
+header.container {
+  min-width: 90% !important;
+  background-color: $base-yellow;
+  font-family: Irancell;
+  position: fixed;
+  top: 4%;
+  left: 5%;
+  z-index: 50;
+
+  div {
+    a {
+      color: #000;
+    }
+
+    position: relative;
+
+    nav.right-side {
+      img.logo {
+        width: 88px;
+        height: auto;
+      }
+
+      ul {
+        padding-top: 1rem;
+
+        .parent {
+          & > a {
+            padding: 3rem 0.4rem;
+          }
+
+          .child {
+            img {
+              position: absolute;
+              top: 40px;
+              left: 45px;
+              z-index: 3;
+              border-radius: 15px;
+            }
+
+            .has-child {
+              & > a::after {
+                content: "";
+                position: absolute;
+                right: 35%;
+                width: 16px;
+                height: 16px;
+                background-image: url(../images/arrow-to-left.svg);
+                background-repeat: no-repeat;
+              }
+            }
+
+            position: absolute;
+            width: 100%;
+            height: 32rem;
+            top: 100%;
+            right: 0;
+            padding: 40px 56px;
+            z-index: 10;
+            display: none;
+            background: #fff;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.04);
+            transition: all 0.5s;
+          }
+        }
+
+        .parent:hover {
+          .child {
+            display: block;
+
+            .children {
+              position: absolute;
+              top: 30px;
+              left: 40%;
+              display: none;
+              margin: 0;
+              padding: 0;
+
+              li {
+                padding: 0.6rem;
+              }
+            }
+          }
+
+          .has-child:hover {
+            .children {
+              display: block;
+            }
+          }
+        }
+
+        .parent:nth-child(1) {
+          & > a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 3px;
+            background: #202020;
+            margin: 0 auto;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+    nav.left-side{
+        .btn:hover {
+            color: #000;
+            background-color:  white !important;
+            border-color: transparent;
+        }
+    }
+  }
+}
+}

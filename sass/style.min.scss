@@ -1,0 +1,547 @@
+@use "layout";
+@use "header";
+@use "footer";
+$base-yellow: #fc0;
+@font-face {
+  font-family: Irancell;
+  src: url(../css/font/Irancell\ Regular.ttf);
+}
+@font-face {
+  src: url(../css/font/MTNIrancell-Fontjo.com/MTNIrancell-Bold.ttf);
+  font-family: MTNIrancell-Bold;
+}
+main{
+.part-6 {
+    height: 21rem;
+}
+    button {
+      // padding: 14px 16px;
+      background-color: $base-yellow;
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      // width: 255px;
+      font-family: Irancell;
+    }
+     .part-6-1{
+margin-top:1rem;
+    }
+}
+
+
+
+@media(min-width:768px){
+main {
+  section.part-2 {
+    .col-12.col-md {
+      position: relative;
+      a {
+        font-family: MTNIrancell-Bold;
+        font-size: 18px;
+        color: #202020;
+      }
+      .part-2-link::after {
+        content: "";
+        position: absolute;
+        top: 87%;
+        padding-right: 25px;
+        width: 16px;
+        height: 16px;
+        background-image: url(../images/arrow-to-left.svg);
+        background-repeat: no-repeat;
+      }
+    }
+    .col-12.col-md:hover {
+      box-shadow: 0px 8px 48px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      padding: 15px 15px;
+      height: 230px;
+    }
+  }
+  section.part-3 {
+    height: auto;
+    .bg-grey {
+      width: 100%;
+      height: 30rem;
+      background: linear-gradient(
+          180deg,
+          rgba(115, 115, 115, 0.4) 0%,
+          rgba(0, 0, 0, 0.8) 100%
+        ),
+        linear-gradient(0deg, #404040, #404040), #202020;
+      border-radius: 24px;
+      .row {
+        position: relative;
+        .col-12.col-md-3 {
+          & > h2 {
+            position: absolute;
+            right: 10%;
+            top: 40%;
+            font-family: MTNIrancell-Bold;
+            font-size: 28px;
+            font-weight: 700;
+          }
+        }
+        .col-12.col-md-8 {
+          .card {
+            background-color: #fff;
+            overflow: hidden;
+            width: 375px !important;
+            height: auto;
+            border-radius: 25px;
+            border: none;
+            margin: 2.5rem 0.5rem;
+            .card-header {
+              height: 10rem;
+              background-color: #fff;
+              border-bottom: none !important;
+              img {
+                background: #fc0;
+                width: 80px;
+                height: 80px;
+                margin: auto;
+                margin-bottom: 21px;
+                border-radius: 24px;
+              }
+              h3 {
+                font-family: Irancell;
+                font-size: 14px;
+                font-weight: 400;
+              }
+              h4 {
+                font-family: MTNIrancell-Bold;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 28px;
+              }
+            }
+            .card-body {
+              height: 12rem;
+              h5 {
+                font-family: Irancell;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+              }
+              span {
+                font-family: MTNIrancell-Bold;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 25px;
+              }
+            }
+            .card-footer {
+              border-top: none !important;
+              background-color: $base-yellow;
+              height: 3rem;
+            }
+          }
+          .card:hover {
+            box-shadow: 0px -8px 24px rgba(255, 204, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+  section.part-4 {
+    .top-part {
+      position: relative;
+      font-weight: 700;
+      h3 {
+        font-size: 24px;
+        font-family: MTNIrancell-Bold;
+      }
+      a {
+        font-family: MTNIrancell-Bold;
+        font-size: 18px;
+      }
+      & > a::after {
+        content: "";
+        position: absolute;
+        top: 28%;
+        padding-right: 20px;
+        width: 16px;
+        height: 16px;
+        background-image: url(../images/arrow-to-left.svg);
+        background-repeat: no-repeat;
+      }
+    }
+    .col-12.col-xl-5 {
+      position: relative;
+      a {
+        img {
+          border-radius: 30px;
+          width: 100%;
+          object-fit: cover;
+          height: 575px;
+        }
+      }
+      .card {
+        width: 90%;
+        cursor: pointer;
+        position: absolute;
+        top: 76%;
+        box-shadow: 0px 4px 0px #f5b100, 0px 8px 12px rgba(0, 0, 0, 0.16);
+        overflow: hidden;
+        height: auto;
+        border-radius: 25px;
+        border: none;
+        text-align: start;
+        padding: 20px 32px;
+        margin: 0 14px -110px;
+        font-family: Irancell;
+        .card-header {
+          background-color: #fff;
+          border-bottom: none;
+          span {
+            font-size: 14px !important;
+            line-height: 22px !important;
+          }
+          h3 {
+            font-size: 20px !important;
+            font-weight: bold !important;
+            line-height: 32px !important;
+            color: #202020;
+          }
+        }
+        .card-body {
+          position: relative;
+          padding-top: 0;
+          a {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+          }
+          & > a::after {
+            content: "";
+            position: absolute;
+            top: 12%;
+            padding-right: 20px;
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/arrow-to-left.svg);
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+    .col-12.col-xl-7 {
+      position: relative;
+      a {
+        img {
+          border-radius: 30px;
+          object-fit: cover;
+          height: 100%;
+          width: 60%;
+        }
+      }
+      .card {
+        cursor: pointer;
+        box-shadow: 0px 4px 0px #f5b100, 0px 8px 12px rgba(0, 0, 0, 0.16);
+        overflow: hidden;
+        height: 19rem;
+        border-radius: 25px;
+        border: none;
+        padding: 20px 32px 32px;
+        position: absolute;
+        margin: 40px 0;
+        width: 50%;
+        left: -25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: Irancell;
+        .card-header {
+          background-color: #fff;
+          border-bottom: none;
+          span {
+            font-size: 14px !important;
+            line-height: 22px !important;
+          }
+          h3 {
+            font-size: 20px !important;
+            font-weight: bold !important;
+            line-height: 28px !important;
+            color: #202020;
+          }
+        }
+        .card-body {
+          position: relative;
+          padding-top: 0;
+          a {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+          }
+          & > a::after {
+            content: "";
+            position: absolute;
+            top: 14%;
+            padding-right: 20px;
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/arrow-to-left.svg);
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+  section.part-5 {
+    background-color: #202020;
+    height: 63rem;
+    .container-fluid {
+      background-image: url(../images/bg-digital-products.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      .col-12.col-md-5 {
+        h2 {
+          font-family: "MTNIrancell-Bold" !important;
+          font-size: 50px;
+          line-height: 72px;
+          margin-bottom: 32px;
+        }
+        h3 {
+          font-family: "MTNIrancell-Bold" !important;
+          font-size: 32px;
+          line-height: 48px;
+          margin-bottom: 16px;
+        }
+        p {
+          font-family: Irancell;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 38px;
+          margin: 0 0 40px;
+        }
+        .btn {
+          font-family: "MTNIrancell-Bold" !important;
+        }
+      }
+      .col-12.col-md-7 {
+        transform: translate(-23px, 223px);
+      }
+      .container {
+        width: 90% !important;
+        nav {
+          .thirdslider {
+            position: relative;
+            .swiper-slide {
+              width: 151.778px !important;
+              margin-left: 8px !important;
+              background: #fff;
+              border: 2px solid #e8e8e8;
+              backdrop-filter: blur(12px);
+              border-radius: 16px;
+              height: 120px;
+              a {
+                position: relative;
+                display: block;
+                z-index: 10;
+                padding: 20px 8px;
+                width: 100%;
+                text-align: center;
+                .inactive-icon {
+                  width: 65px;
+                  text-align: center;
+                }
+                .active-icon {
+                  display: none;
+                }
+                h6 {
+                  color: black;
+                }
+              }
+              a:hover {
+                .inactive-icon {
+                  display: none;
+                }
+                .active-icon {
+                  display: block;
+                  width: 75px;
+                }
+                h6 {
+                  color: white;
+                }
+              }
+            }
+            .swiper-slide:hover {
+              background: rgba(255, 255, 255, 0.4);
+              border: 1px solid #e8e8e8;
+            }
+            .swiper-button-next,
+            .swiper-button-prev {
+              border-radius: 50%;
+              color: #000 !important;
+              display: flex;
+              text-align: center;
+              width: 64px;
+              height: 64px;
+              align-items: center;
+              justify-content: center;
+              margin: auto;
+              background: $base-yellow !important;
+            }
+            .swiper-button-next {
+              left: 0;
+              top: 10%;
+            }
+            .swiper-button-prev {
+              right: 0;
+              top: 10%;
+            }
+            // .swiper-button-next::after,
+            // .swiper-button-prev::after{
+            //   font-size: 14px !important;
+            // }
+          }
+        }
+      }
+    }
+  }
+ section.part-6 {
+    height: 20rem;
+
+    button {
+      padding: 14px 16px;
+      background-color: $base-yellow;
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      width: 255px;
+      font-family: Irancell;
+    }
+  }
+    // /* Style the tab */
+    // .tab {
+    //   overflow: hidden;
+    // }
+
+    // /* Style the buttons that are used to open the tab content */
+    // .tab button {
+    //   border: none;
+    //   outline: none;
+    //   cursor: pointer;
+    //   padding: 14px 16px;
+    //   transition: 0.3s;
+    // }
+
+    // /* Change background color of buttons on hover */
+    // .tab button:hover {
+    //   background-color: #ddd;
+    // }
+
+    // /* Create an active/current tablink class */
+    // .tab button.active {
+    //   background-color: #ccc;
+    // }
+
+    // /* Style the tab content */
+    // .tabcontent {
+    //   display: none;
+    //   padding: 6px 12px;
+    //   border-top: none;
+    // }
+    .col-12.col-md-3 {
+      .card {
+        overflow: hidden;
+        border-radius: 25px;
+        border: 1px solid #e8e8e8;
+        // padding: 20px 32px 32px;
+        position: absolute;
+        margin: 40px 0;
+        .card-header {
+          background-color: $base-yellow;
+          border-bottom: none;
+        }
+
+        .card-body {
+          li::before {
+            content: "";
+            display: block;
+            background-image: url(../images/check-list-light.svg);
+            width: 24px;
+            height: 24px;
+            margin: 4px 0 0 8px;
+            flex-shrink: 0;
+          }
+        }
+        .card-footer {
+          border-top: none;
+          background-color: #fff;
+          position: relative;
+          a {
+            font-family: "MTNIrancell-Bold" !important;
+            font-size: 16px;
+            line-height: 26px;
+            color: #202020;
+          }
+          a::after {
+            content: "";
+            position: absolute;
+            top: 34%;
+            padding-right: 23px;
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/arrow-to-left.svg);
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+  section.part-7 {
+    .bg-grey {
+      width: 100%;
+      height: 55rem;
+      background: linear-gradient(
+          180deg,
+          rgba(115, 115, 115, 0.4) 0%,
+          rgba(0, 0, 0, 0.8) 100%
+        ),
+        linear-gradient(0deg, #404040, #404040), #202020;
+      border-radius: 24px;
+    }
+    .swiper {
+      .card {
+       padding: auto;
+        box-shadow: 0px 4px 0px #f5b100, 0px 8px 12px rgba(0, 0, 0, 0.16);
+
+        height: 100%;
+        border-radius: 25px;
+        border: none;
+        text-align: start;
+        // padding: 20px 32px;
+        // margin: 0 14px -110px;
+        font-family: Irancell;
+        .card-header {
+          background-color: #fff;
+          border-bottom: none !important;
+        }
+        .card-body {
+         
+          background-color: #fff;
+          a {
+            color: black;
+          }
+          a::after {
+            content: "";
+            position: absolute;
+            top: 87%;
+            padding-right: 25px;
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/arrow-to-left.svg);
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
